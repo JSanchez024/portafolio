@@ -1,0 +1,84 @@
+@use 'base/variables' as v;
+
+.formulario{
+    //background-color: v.$color_principal;
+    padding: 3rem;
+    font-family: v.$fuente_principal;
+    padding-top: 4rem;
+    margin:  auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+//.formulario_contenedor{
+//
+//}
+.formulario h2{
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: v.$h2_font-size;
+}
+.formulario_campo{
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: v.$weight_600;
+}
+.formulario_campo label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.formulario_campo input, .formulario_campo textarea{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.formulario_campo textarea{
+    height: 200px;
+    resize: none;
+}
+button[type="submit"]{
+    width: 20%;
+    height: 50px;
+    background-color: #4CAF50;
+    color: v.$blanco;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: v.$large_font-size;
+    font-weight: v.$weight_600;
+
+
+    
+}
+button[type="submit"]:hover{
+    background-color: v.$blanco;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+//.contenido_contacto{
+//    padding-top: 10rem;
+//    width: 95%;
+//    max-width: 90%;
+//    margin: 0 auto;
+//}
+//.contacto .contenido_contacto h2{
+//    font-size: 4.8rem;
+//    font-family: v.$body_font;
+//    text-align: center;
+//}
+//.contacto .col{
+//    padding: 1rem;
+//    
+//}

@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 
 .sobremi{
-    max-width: 1500px;
+    max-width: 100%;
     padding: 5rem 5rem;
     color: v.$container_color;
     display: flex;
@@ -12,10 +12,11 @@
 .sobremi .contenedor_foto{
     max-width: 40rem;
     margin-right: 1rem;
+    padding-top: 4rem;
 }
 .sobremi .contenedor_foto img{
     padding: 2rem;
-    width: 70%;
+    width: 60%;
     border-radius: 2rem;
     background-color: v.$border_color;
 }
@@ -75,147 +76,3 @@
 }
 //quiero que contenedor foto y sobremi_container estes mas juntos
 
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//.sobremi{
-//    //background-color: aqua;
-//    padding: 4rem 0 ;
-//    //background-color: v.$container_color;
-//}
-//.contenedor{
-//    background-color: aqua;
-//    max-width: 100%;
-//    //margin: 0 auto;
-//    padding: 6rem;
-//    //box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-//    display: flex;
-//    //flex-wrap: wrap;
-//    //justify-content: center;   
-//}
-//
-//.descripcion{
-//    background-color: re;
-//}
-//
-//
-//
-//
-//
-////.imagen_perfil{
-////    width: 30%;
-////    height: 20rem;
-////    object-fit: cover;
-////    border-radius: 1rem;
-////    //margin-bottom: 2rem;
-////    //border-radius: 1rem;
-////    //overflow: hidden;
-////}
-////
-//.descripcion{
-//    width: 60%;
-//}
-//
-//.descripcion,
-//h2{
-//    margin-top: 0;
-//}
-//
-//.descripcion,
-//p{
-//    margin-bottom: 1rem;
-//}
-//
-//.redes_sociales,
-//ul{
-//    list-style: none;
-//    padding: 0;
-//    margin: 0;
-//}
-//.redes_sociales,
-//li{
-//    display: inline-block;
-//    margin-right: 2rem;
-//}
-//.redes_sociales,
-//a{
-//    text-decoration: none;
-//
-//}
-
-
-
-//}
-//
-//.sobremi_container{
-//    display: flex;
-//    background-color: red;
-//}
-//
-//.sobremi_img{
-//    width:30rem;
-//    height:28rem
-//}
-
-//.sobremi_img-wrapper{
-//    //position: relative;
-//    
-//    
-//}
-//
-//.sobremi_img{
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    height: 100%;
-//    object-fit: cover;
-//}
-//
-//.sobremi_img:nth-child(1){
-//    clip-path: polygon(0 0, 0 32%, 28% 0);
-//    transform: translateY(-1.25rem);
-//}
-//.sobremi_img:nth-child(2){
-//    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
-//    transform: translateY(-0.75rem);
-//}
-//.sobremi_img:nth-child(3){
-//    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
-//    transform: translateY(-0.25em);
-//}
-//.sobremi_img:nth-child(4){
-//    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
-//    transform: translateY(0.25rem);
-//}

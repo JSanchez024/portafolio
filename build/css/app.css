@@ -13,7 +13,7 @@ html {
 }
 
 .sobremi {
-  max-width: 1500px;
+  max-width: 100%;
   padding: 5rem 5rem;
   color: hsl(200, 10%, 8%);
   display: flex;
@@ -23,11 +23,12 @@ html {
 .sobremi .contenedor_foto {
   max-width: 40rem;
   margin-right: 1rem;
+  padding-top: 4rem;
 }
 
 .sobremi .contenedor_foto img {
   padding: 2rem;
-  width: 70%;
+  width: 60%;
   border-radius: 2rem;
   background-color: hsl(0, 0%, 20%);
 }
@@ -87,12 +88,18 @@ html {
 .tecnologias {
   padding: 3rem;
   font-family: "Jost", serif;
+  padding: 5rem 5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .contenedor_categorias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  padding-top: 4rem;
 }
 
 .categoria {
@@ -124,49 +131,110 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.tecnologias {
-  background-color: #fff;
+.proyectos {
+  padding: 2rem;
+  font-family: "Jost", serif;
+  padding-top: 3rem;
   margin: 2rem auto;
   max-width: 900px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-.proyectos {
+.proyectos .titulo_seccion {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.contenedor_proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.contenedor_proyectos :hover {
+  filter: grayscale(0);
+}
+
+.proyecto img {
+  text-align: center;
+  width: 400px;
+  border-radius: 8px;
+  filter: grayscale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.proyecto .proyecto4 {
+  width: 400px;
+  height: 267.18px;
+}
+
+.proyecto .info {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+p {
+  padding-top: 1rem;
+}
+
+.formulario {
   padding: 3rem;
   font-family: "Jost", serif;
+  padding-top: 4rem;
+  margin: auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.proyectos .titulo_seccion {
+.formulario h2 {
+  margin-bottom: 5rem;
   text-align: center;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-decoration-thickness: 0.5rem;
+  font-size: 2.5rem;
 }
 
-.proyectos .contenedor_proyectos {
-  width: 800px;
-  margin: 40px auto;
-  text-align: center;
-}
-
-.proyectos .contenedor_proyectos .proyectos_arriba {
-  display: flex;
-  justify-content: space-around;
+.formulario_campo {
   margin-bottom: 2rem;
-  gap: 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-.proyectos .contenedor_proyectos .proyectos_abajo {
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 1rem;
+.formulario_campo label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.formulario_campo input, .formulario_campo textarea {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario_campo textarea {
+  height: 200px;
+  resize: none;
+}
+
+button[type=submit] {
+  width: 20%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+button[type=submit]:hover {
+  background-color: #fff;
+  transition: 0.5s;
 }
 
 .inicio {
@@ -235,7 +303,6 @@ h3 {
 }
 
 .inicio .contenido .presentacion {
-  max-width: 1100px;
   height: 120vh;
   margin: auto;
   color: #fff;

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
+    <meta name="descripcion" content="Revisa mi portafolio
+                                      y contactame para lo que necesites.">
     <title>Joaquin Sanchez</title>
 </head>
 <body>
@@ -52,7 +54,6 @@
 
      <!-- Sobre mi -->
     <section class="sobremi" id="sobremi">
-        <!--<div class="aaaa">-->
         <div class="contenedor_foto">
             <img src="src/img/pexels-creationhill-1681010.webp" alt="">
         </div>
@@ -63,10 +64,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolores in quo ab illum voluptates, itaque minima consequatur accusamus doloribus nisi repellendus </p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             <a href="#">Descargar CV</a>
-
        </div>
-       <!-- </div>-->
-        
     </section>
 
     <!--TECNOLOGIAS-->
@@ -93,6 +91,7 @@
                     <img src="/src/img/iconos/back/nodejs.png" alt="NODE.JS">
                 </div>
             </div>
+
             <!--<div class="categoria">
                 <h3>Aprendiendo</h3>
                 <div class="categoria">
@@ -121,43 +120,160 @@
         <h3 class="titulo_seccion">Mis Proyectos</h3>
         <div class="contenedor_proyectos">
 
-            <div class="proyectos_arriba">
-                <div class="proyecto">
-                    <img src="/src/img/proyectos/proyecto1.webp" alt="">
-                    <div class="info">
-                        <h4>Descripcion del Proyecto</h4>
-                        <p>Diseño Web</p>
-                    </div>
-                </div>
-    
-                <div class="proyecto">
-                    <img src="/src/img/proyectos/proyecto2.webp" alt="">
-                    <div class="info">
-                        <h4>Descripcion del Proyecto</h4>
-                        <p>Diseño Web</p>
-                    </div>
+            <div class="proyecto">
+                <img src="/src/img/proyectos/proyecto1.webp" alt="">
+                <div class="info">
+                    <h4>la idea es que se de vuelta con fondo transparente y aparezca la descripcion</h4>
+                    <p>Diseño Web</p>
                 </div>
             </div>
 
-            <div class="proyectos_abajo">
-                <div class="proyecto">
-                    <img src="/src/img/proyectos/proyecto3.webp" alt="">
-                    <div class="info">
-                        <h4>Descripcion del Proyecto</h4>
-                        <p>Diseño Web</p>
-                    </div>
+            <div class="proyecto">
+                <img src="/src/img/proyectos/proyecto2.webp" alt="">
+                <div class="info">
+                    <h4>la idea es que se de vuelta con fondo transparente y aparezca la descripcion</h4>
+                    <p>Diseño Web</p>
                 </div>
-    
-                <div class="proyect4">
-                    <img src="/src/img/proyectos/proyecto4.webp" alt="">
-                    <div class="info">
-                        <h4>Descripcion del Proyecto</h4>
-                        <p>Diseño Web</p>
-                    </div>
+            </div>
+        
+            <div class="proyecto">
+                <img src="/src/img/proyectos/proyecto3.webp" alt="">
+                <div class="info">
+                    <h4>la idea es que se de vuelta con fondo transparente y aparezca la descripcion</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img class="proyecto4" src="/src/img/proyectos/proyecto4.webp" alt="">
+                <div class="info">
+                    <h4>la idea es que se de vuelta con fondo transparente y aparezca la descripcion</h4>
+                    <p>Diseño Web</p>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <!--Contacto-->
+    <section class="formulario" id="contacto">
+        <div class="formulario_contenedor">
+            <h2>Contactame</h2>
+            <form action="">
+                <div class="formulario_campo">
+                    <label for="nombre">Nombre:</label>
+                    <input 
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </div>
+                <div class="formulario_campo">
+                    <label for="asunto">Asunto:</label>
+                    <input 
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        required
+                    >
+                </div>
+                <div class="formulario_campo">
+                    <label for="correo">Correo Electronico:</label>
+                    <input 
+                        type="email"
+                        name="correo" 
+                        id="correo"
+                        required
+                    >
+                </div>
+                <div class="formulario_campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea 
+                        name="mensaje" 
+                        id="mensaje"
+                        name="mensaje"
+                        required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<section id="contacto" class="contacto">
+        <div class="contenido_contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                Formulario
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero De Telefono">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="" rows="" placeholder="Mensaje"></textarea>
+                    <button class="boton">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+
+
+
+
+
+
+    <!--<section class="contacto" id="contacto">
+        <h3 class="titulo_seccion">Contactame</h3>
+        <div class="contenedor_formulario">
+            <form action="">
+                <div class="fila mitad">
+                    <input
+                        type="text"
+                        placeholder="Nombre"
+                        class="input_mitad"
+                    >
+                    <input
+                        type="text"
+                        placeholder="Correo Electronico"
+                        class="input-mitad"
+                    >
+                </div>
+                <div class="fila">
+                    <input 
+                        type="text"
+                        placeholder="Tema..."
+                        class="input_full"
+                    >
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="" rows="" placeholder="Tu mensaje..." class="input_full"></textarea>
+                </div>
+                <input 
+                    type="submit"
+                    value="Enviar"
+                    class="btn_enviar"
+                >
+            </form>
+        </div>
+    </section>-->
 
 
     

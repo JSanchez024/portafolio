@@ -3,12 +3,18 @@
 .tecnologias{
     padding: 3rem;
     font-family: v.$fuente_principal;
+    padding: 5rem 5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
 }
 
 .contenedor_categorias{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding-top: 4rem;
 }
 .categoria{
     border: 1px solid #ccc;
@@ -33,11 +39,4 @@ h2{
 }
 h3{
     margin-bottom: 1rem;
-}
-.tecnologias{
-    background-color: v.$blanco;
-    margin: 2rem auto;
-    max-width: 900px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; 
 }
