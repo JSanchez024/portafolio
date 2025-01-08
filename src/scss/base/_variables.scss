@@ -1,0 +1,36 @@
+$header-height: 3.5rem;
+
+//fuentes
+$fuente_principal: "Jost", serif;
+
+//Tamaño meidaquerys
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$xl_desktop: 1200px;
+
+/* COLORES */
+$color_principal: hsl(268, 77%, 58%);
+$color_principal-dark: hsl(268, 87%, 31%);
+$color_principal-light: hsl(268, 100%, 83%);
+$title_color: hsl(0, 0%, 87%);
+$text_color: hsl(0, 0%, 87%);
+$body_color: hsl(200, 12%, 5%);
+$header_color: hsl(200, 12%, 5%, 50%);
+$container_color: hsl(200, 10%, 8%);
+$border_color: hsl(0, 0%, 20%);
+$blanco: #fff;
+
+/* FUENTES Y TIPOGRAFIAS */
+$body_font: 'Jost', sans-serif;
+$big_font-size: 5.5rem;
+$h2_font-size: 2.5rem;
+$h3_font-size: 1.5rem;
+$larger_font-size:1.2rem;
+$large_font-size: 1.125rem;
+
+/* FONT WEIGHT*/
+$weight_300: 300;
+$weight_400: 400;
+$weight_600: 600;
+$weight_900: 900;

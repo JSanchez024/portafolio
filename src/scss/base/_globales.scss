@@ -1,0 +1,71 @@
+@use 'variables' as v;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$body_font;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+//input,
+//textarea,
+//button,
+//body{
+//    font-family: v.$body_font;
+//    font-size: v.$large_font-size;
+//}
+//
+//body{
+//    //background-color: v.$body_color;
+//    //color: v.$text_color;
+//    font-family: v.$fuente_principal;
+//    font-optical-sizing: auto;
+//    font-style: normal;
+//    padding: 0;
+//    margin: 0;
+//}
+//
+//input,
+//textarea,
+//button{
+//    outline: none;
+//    border: none;
+//    background-color: transparent;
+//}
+//
+//h1,
+//h2,
+//h3{
+//    color: v.$title_color;
+//    font-weight: v.$weight_900;
+//    margin: 0 0 5rem 0;
+//}
+//h1 {
+//    font-size: 4rem;
+//}
+//h2 {
+//    font-size: 4.6rem;
+//}
+//h3 {
+//    font-size: 6rem;
+//    text-align: center;
+//}
+//
+//ul{
+//    list-style: none;
+//}
+//
+//img{
+//    max-width: 100%;
+//    width: 100%;
+//    height: auto;
+//    display: block;
+//}
+
+//.seccion{
+//    padding-block:  6rem;
+//}
+

@@ -1,0 +1,32 @@
+{
+  "name": "portafolio-js",
+  "version": "1.0.0",
+  "description": "Creando Portafolio de Joaquin Sanchez",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSanchez024/Portfolio.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "Joaquin Sanchez Suazo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSanchez024/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JSanchez024/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.1"
+  }
+}
