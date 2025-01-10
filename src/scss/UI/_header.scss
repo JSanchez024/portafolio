@@ -1,142 +1,63 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
-.inicio{
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/src/img/pexels-kevin-ku-92347-577585.webp");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
 
-}
-.inicio .contenido header{
-    //background-color: v.$body_color;
-    background-color: v.$header_color;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;    
-}
-.inicio .contenido header .contenido_header{
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2rem;
-}
-.inicio .contenido header .contenido_header .h1{
-    text-align: center;
-    color: v.$color_principal;
-    font-size: 2rem;
-    font-weight: 900;
-}
-.inicio .contenido header .contenido_header nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: 3rem;
-}
-.inicio .contenido header .contenido_header nav ul li a{
-    text-decoration: none;
-    color: v.$text_color;
-    margin: 0 2rem;
-    font-size: 1.5rem;
-    font-weight: v.$weight_400;
-    transition: .5s;
-}
-.inicio .contenido header .contenido_header nav ul a:hover{
-    color: v.$color_principal;
-}
-.inicio .contenido header .contenido_header .redes a{
-    text-decoration: none;
-    color: v.$blanco;
-    display: inline-block;
-    margin-left: 2rem;
-    transition: .5s;
-    font-size: 2rem;
-
-}
-.inicio .contenido header .redes a:hover{
-    color: v.$color_principal-light;
-    font-size: 3rem;
+.header{
+    background-color: v.$container_color;
     
+    .contenido_header{
+        padding: 2rem;
+        @include m.desktop{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+    }
+
+    h1{
+        color: v.$color_principal;
+        text-align: center;
+        margin-bottom: 3rem;
+    } 
+}
+.navegacion_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include m.desktop{
+        flex-direction: row;
+    }
+
+    a{
+        color: v.$blanco;
+        font-size: 1.5rem;
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover{
+            color: v.$color_principal-light;
+        }
+    }
 }
 
+.redes{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin-top: 3rem;
+    @include m.tablet{
+        margin-bottom: 3rem;
 
+    }
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//header{
-//display: flex;
-//    //background-color: aqua;
-//    background-color: #000;
-//    justify-content: space-between;
-//    font-family: v.$fuente_principal;
-//    align-items: center;   
-//    padding: 1.8rem 10rem;
-//    box-shadow: 0 3px 9px #0000;
-//    //z-index: 99;
-//}
-//
-//.nombre{
-//    font-family: v.$fuente_principal;
-//    font-size: v.$h2_font-size;
-//    font-weight: v.$weight_600;
-//    color: v.$color_principal;
-//}
-//
-//
-//nav,
-//ul{
-//    display: flex;
-//    margin: 0;
-//    padding: 0;
-//    gap: 3rem;
-//    font-size: v.$larger_font-size;
-//    
-//}
-//
-//nav,
-//li{
-//    margin-right: 2rem;
-//}
-//
-//nav,
-//a{
-//    color: v.$blanco;
-////  color: v.$color_principal;
-//    text-decoration: none;
-//    transition: .5s;
-//    :hover{
-//        color: v.$color_principal;
-//    }
-//}
-//
+    a{
+        color: v.$blanco;
+        transition: .5s;
+        cursor: pointer;
+        
+        
+    }
+}

@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+
+
+.contenedor_footer{
+    background-color: v.$container_color;
+    font-weight: v.$weight_600;
+    color: v.$blanco;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+.contenedor_footer .redes a{
+    color: v.$blanco;
+    display: inline-block;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+

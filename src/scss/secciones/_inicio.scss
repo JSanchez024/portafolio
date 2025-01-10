@@ -1,40 +1,50 @@
 @use 'base/variables' as v;
 
 
-.inicio .contenido .presentacion{
-    //max-width: 1100px;
-    height: 90vh;
-    margin: auto;
-    color: v.$text_color;
+
+.inicio{
+    height: 100vh;
+    //background-color: aqua; 
+    
+}
+.inicio .presentacion{
+    color: v.$blanco;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    //background-color: red;
+    margin-top: 5rem;
+
 }
-.inicio .contenido .presentacion .bienvenida{
+.presentacion .bienvenida{
     font-size: 3rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
+font-family: v.$font-family;
+
 }
-.inicio .contenido .presentacion h2{
+.presentacion h2{
     font-size: 3rem;
     margin-bottom: 2.5rem;
     text-align: center;
-    color: v.$text_color;
-    
+    color: v.$blanco;
+    font-family: v.$font-family;
 }
-.inicio .contenido .presentacion h2 span{
+.presentacion h2 span{
     font-size: 2.5rem;
     color: v.$color_principal;
+    font-family: v.$font-family;
 }
-.inicio .contenido .presentacion .descripcion{
-    max-width: 70rem;
-    margin: 2.5rem auto;
+.presentacion .descripcion{
+    max-width: 70%;
+    //margin: 2.5rem auto;
     font-size: 1.8rem;
     text-align: center;
+    font-family: v.$font-family;
 }
-.inicio .contenido .presentacion a{
+.inicio .presentacion a{
     text-decoration: none;
     display: inline-block;
     margin: 2.5rem;
@@ -45,11 +55,10 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
+    font-family: v.$font-family;
 }
-.inicio .contenido .presentacion a:hover{
+
+.inicio .presentacion a:hover{
     background-color: v.$color_principal-dark;
 }
-.icono_nav{
-    color: v.$blanco;
-    display: none;
-}
+

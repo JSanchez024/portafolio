@@ -1,0 +1,21 @@
+.ir-arriba {
+    //display: none; /* Ocultamos el botón por defecto */
+    position: fixed; /* Lo fijamos en una posición */
+    bottom: 50px; /* Lo ubicamos a 20px del borde inferior */
+    right: 50px; /* Lo ubicamos a 20px del borde derecho */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 20%; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    
+    :hover{
+        font-size: 2rem;
+        transition: .5s;
+    }
+  }
+  
+  /* Mostrar el botón cuando se haya scrolleado una cierta distancia */
+  .ir-arriba.mostrar {
+    display: block;
+  }
