@@ -6,13 +6,13 @@
     <meta name="description" content="width=device-width, initial-scale=1.0">
     <title>Joaquin Sanchez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <!--<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="build/css/app.css">
+
+   <!-- <script type="module" src="/build/js/app.js" defer></script>-->
 </head>
 <body>
 
@@ -43,9 +43,9 @@
     <section class="inicio" id="inicio">
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy<span> Joaquin Sanchez</span>, Desarrollador Web</h2>
-                <p class="descripcion">Lorem ipsum dolosd asdadsa ddasd asds labore voluptas culpa est officia alias explicabo tempore quisquam ea incidunt placeat magnam cum commodi, ex minima assumenda excepturi quidem vero!</p>
-                <a href="#proyectos">Ir a Proyectos</a>
+                <h2>Soy<span> Joaquin Sanchez</span> Desarrollador Web</h2>
+                <p class="descripcion">Explora mi portafolio. Aquí encontrarás una muestra de mis proyectos, habilidades y conocimientos adquiridos.<br> Un pixel a la vez</p>
+                <a href="#proyectos">Explora mis Proyectos</a>
             </div>
         </div>
     </section>
@@ -54,14 +54,14 @@
     <section class="sobremi" id="sobremi">
         <div class="contenedor_sobremi">
             <div class="contenedor_foto">
-                <img src="src/img/pexels-creationhill-1681010.avif" alt="">
+                <img  src="src/img/pexels-creationhill-1681010.avif" alt="">
             </div>
             <div class="sobremi_container">
                 <p class="titulo_seccion">Sobre Mi</p>
                 <h2>Hola, soy &nbsp; <span> Joaquin Sanchez</span></h2>
                 <h3>Desarrollador Web</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolores in quo ab illum voluptates, itaque minima consequatur accusamus doloribus nisi repellendus </p>
-                <p>Ldssdsdsdorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Soy Tecnico Avansado en Programacion, formado en la Universidad Diego Portales. <br> Actualmente estoy en constante aprendisaje sobre desarrollo web y busco mi primera oportunidad para aplicar mis habilidades y conocimientos en un entorno profesional y aprender de un equipo experimentado </p>
+                <!--<p>Ldssdsdsdorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
                 <a href="#">Descargar CV</a>
             </div>
         </div>
@@ -75,50 +75,43 @@
 
     <!--TECNOLOGIAS--->
     <section class="tecnologias" id="tecnologias"> 
-        <h2>Tecnologias</h2>
-        <p>En mi viaje por el mundo del desarrollo web, he cultivado experiencia y habilidades en una variedad de tecnologias. Mi stack tecnologico incluye:</p>
-
-        <div class="contenedor_categorias">
-            <div class="categoria">
-                <h3>Frontend</h3>
-                <div class="iconos">
-                    <img src="/src/img/iconos/front/css.avif" alt="CSS">
-                    <img src="/src/img/iconos/front/html.avif" alt="HTML">
-                    <img src="/src/img/iconos/front/js.avif" alt="JAVASCRIPT">
-                    <img src="/src/img/iconos/front/sass.avif" alt="SASS">
-                </div>
+       
+        <div class="content">
+            <div class="info">
+                <h2>Tecnologias</h2>
+                <p>En mi viaje por el mundo del desarrollo web, he cultivado experiencia y habilidades en una variedad de tecnologias. Mi stack tecnologico incluye:</p>
+                
             </div>
+            <div class="swiper">    
+                <div class="swiper-wrapper">
 
-            <div class="categoria">
-                <h3>Backend</h3>
-                <div class="iconos">
-                    <img src="/src/img/iconos/back/php.avif" alt="PHP">
-                    <img src="/src/img/iconos/back/mysql.avif" alt="MYSQL">
-                    <img src="/src/img/iconos/back/nodejs.avif" alt="NODE.JS">
-                </div>
-            </div>
-
-            <!--<div class="categoria">
-                <h3>Aprendiendo</h3>
-                <div class="categoria">
-                    <div class="iconos">
-                        <img src="react" alt="">
-                        <img src="nextjs" alt="">
-                        <img src="typescript" alt="">
-                        <img src="tailwind" alt="">
-                        <img src="express" alt="">
-                        <img src="mongodb" alt="">
+                    <div class="swiper-slide">
+                        <h2>Frontend</h2>
                     </div>
+
+                    <div class="swiper-slide">
+                        <h2>Backend</h2>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Herramientas</h2>
+                    </div>
+
+                    <!--<div class="swiper-slide">
+                        <h2>Frontend</h2>
+                    </div>-->
+
                 </div>
-            </div>-->
-            <div class="categoria">
-                <h3>herramientas</h3>
-                <div class="iconos">
-                    <img src="/src/img/iconos/herramientas/git.avif" alt="GIT">
-                    <img src="/src/img/iconos/herramientas/github.avif" alt="GITHUB">
-                </div>
+
             </div>
         </div>
+
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </section>
 
     <!--Proyectos-->
@@ -220,5 +213,10 @@
         
         
     </footer>
+
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="build/js/app.js"></script>
 
 </body>

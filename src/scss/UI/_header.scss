@@ -4,14 +4,31 @@
 
 .header{
     background-color: v.$container_color;
+
+    
+    @include m.desktop{
+        
+        &.fixed{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+    
+    
     
     .contenido_header{
         padding: 2rem;
+        height: 33rem;
         @include m.desktop{
-           display: flex;
+            display: flex;
+            height: 6.5rem;
            justify-content: space-between;
            align-items: center;
         }
+
     }
 
     h1{
@@ -27,16 +44,21 @@
     gap: 2rem;
     @include m.desktop{
         flex-direction: row;
+        
     }
-
+    //@include m.telefono{
+    //    display: none;
+    //}
+    
     a{
         color: v.$blanco;
         font-size: 1.5rem;
         transition: .5s;
         cursor: pointer;
 
-        &:hover{
-            color: v.$color_principal-light;
+        &:hover, 
+        &.active{
+            color: aqua;
         }
     }
 }
@@ -47,17 +69,17 @@
     font-size: 1.7rem;
     justify-content: center;
     margin-top: 3rem;
-    @include m.tablet{
+    @include m.telefono{
         margin-bottom: 3rem;
-
+       
     }
-    
-
     a{
         color: v.$blanco;
         transition: .5s;
-        cursor: pointer;
-        
-        
+        cursor: pointer; 
+        display: none; 
+        @include m.desktop{
+            display: block;
+        }
     }
 }

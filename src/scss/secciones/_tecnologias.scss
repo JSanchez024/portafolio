@@ -1,47 +1,225 @@
 @use 'base/variables' as v;
 
+
 .tecnologias{
-    padding: 3rem;
-    font-family: v.$fuente_principal;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$blanco;
+    min-height: 100vh;
+    max-width: 900px;
+    overflow: hidden;
     padding: 5rem 5rem;
     margin: 2rem auto;
-    max-width: 900px;
-    border-radius: 8px; 
-    background-color: v.$blanco;
+    border-radius: 8px;
     box-shadow: 0 0 100px rgba(255, 255, 255, 40);
 }
 
-.contenedor_categorias{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding-top: 4rem;
-}
-.categoria{
-    border: 1px solid #ccc;
-    padding: 1.5rem;
-    border-radius: .5rem;
-    text-align: center;
-}
-.iconos{
+.content{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    align-items: center;
+    gap: 3rem;
+    backdrop-filter: blur(30px);
+    background-color: aqua;
+    border-radius: 20px;
+    width: min(900px, 100%);
+    box-shadow: 0 0.5px 0 1px rgba(255,255,255, 0.2) inset, 0 1px 0 0 rgba(255,255,255, 0.65) inset, 04px 16px rgba(0,0,0, 0.1);
+    z-index: 10;
 }
-.iconos img{
-    width: 5rem;
-    height: 5rem;
-    object-fit: contain;
-}
-h2{
-    color: #333;
-    font-family: v.$font-family;
+.info{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    padding: 0 35px;
+    text-align:  justify;
+
+
+    p{
+        color: v.$container_color;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
 }
-h3{
-    margin-bottom: 1rem;
-    font-family: v.$font-family;
+
+.swiper{
+    width: 250px;
+    height: 450px;
+    padding: 50px 0;
 }
+
+.swiper-slide{
+    position: relative;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.swiper-slide h2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: v.$blanco;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0 0 20px 20px;
+}
+
+.swiper-slide:nth-child(1n){
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400);
+}
+
+
+//@keyframes gelatine{
+//    0%, 100%{
+//        transform: scale(1.1);
+//    }
+//
+//    25%{
+//        transform: scale(0.9, 1.1);
+//    }
+//    50%{
+//        transform: scale(1.1, 0.9);
+//    }
+//    75%{
+//        transform: scale(0.95, 1.05);
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.tecnologias{
+//    padding: 3rem;
+//    font-family: v.$fuente_principal;
+//    padding: 5rem 5rem;
+//    margin: 2rem auto;
+//    max-width: 900px;
+//    border-radius: 8px; 
+//    background-color: v.$blanco;
+//    box-shadow: 0 0 100px rgba(255, 255, 255, 40);
+//}
+//h2{
+//    color: #333;
+//    font-family: v.$font-family;
+//    display: flex;
+//    justify-content: center;
+//}
+//
+//.swiper {
+//    width: 240px;
+//    height: 320px;
+//  }
+//
+//  .swiper-slide {
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    border-radius: 18px;
+//    font-size: 22px;
+//    font-weight: bold;
+//    color: #fff;
+//  }
+//
+//  .swiper-slide:nth-child(1n) {
+//    background-color: rgb(206, 17, 17);
+//  }
+//
+//  .swiper-slide:nth-child(2n) {
+//    background-color: rgb(0, 140, 255);
+//  }
+//
+//  .swiper-slide:nth-child(3n) {
+//    background-color: rgb(10, 184, 111);
+//  }
+//
+// // .swiper-slide:nth-child(4n) {
+// //   background-color: rgb(211, 122, 7);
+// // }
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.contenedor_categorias{
+//    display: grid;
+//    grid-template-columns: repeat(2, 1fr);
+//    gap: 2rem;
+//    padding-top: 4rem;
+//}
+//.categoria{
+//    border: 1px solid #ccc;
+//    padding: 1.5rem;
+//    border-radius: .5rem;
+//    text-align: center;
+//}
+//.iconos{
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: center;
+//    gap: 1rem;
+//    margin-top: 1rem;
+//}
+//.iconos img{
+    //    width: 5rem;
+    //    height: 5rem;
+    //    object-fit: contain;
+    //}
+//h2{
+//    color: #333;
+//    font-family: v.$font-family;
+//    display: flex;
+//    justify-content: center;
+//}
+//h3{
+//    margin-bottom: 1rem;
+//    font-family: v.$font-family;
+//}
