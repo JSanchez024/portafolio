@@ -3,82 +3,68 @@
 
 .inicio{
     height:100vh;
-    //background-color: aqua;
-
-    //@include m.desktop{
-    //    //display: flex;
-    //    //font-size: 4rem;
-    //}
-    //@include m.tablet{
-        //display: grid;
-        //grid-template-columns: repeat(2, 1fr);
-        //display: flex;
-        //gap: 5rem;
-        //font-size: 7rem;
-    //}
 
     .presentacion{
-        //background-color: aqua;
         color: v.$blanco;
-        text-align: center;
-        @include m.desktop{
-            color: v.$blanco;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
 
+        @include m.tablet{
+            color: v.$blanco;
+            text-align: center;
         }
 
-
         .bienvenida{
-            font-size: 2rem;
-            display: flex;
-            justify-content: center;
-            padding-top: 3rem;
-            @include m.desktop{
-                font-size: 3rem;
-                margin-bottom: 2rem;
-                text-transform: uppercase;
-                letter-spacing: .5rem;
+           font-size: 3rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+
+            @include m.tablet{
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                padding-top: 3rem;                
             }
         }
 
-        h2{
+        .h2_inicio{
+            margin-bottom: 2.5rem;
+            text-align: center;
+            color: v.$blanco;
+            font-family: v.$font-family;
+            font-size: 3rem;
 
-            font-size: 1rem;
-            display: flex;
-            justify-content: center;
-            padding-top: 4rem;
-            @include m.desktop{
-                margin-bottom: 2.5rem;
-                text-align: center;
-                color: v.$blanco;
-                font-family: v.$font-family;
-                font-size: 3rem;
+            @include m.tablet{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 2rem;
+                gap: 1rem;
             }
             span{
                 font-size: 2.5rem;
                 color: v.$color_principal;
                 font-family: v.$font-family;
             }
-
-
         }
+        
         .descripcion{
-            font-size: 1.3rem;
-            display: flex;
-            justify-content: center;
-            width: 95%;
-            text-align: center;
-
-            @include m.desktop{
+            position: relative;
             max-width: 70%;
-            //margin: 2.5rem auto;
             font-size: 1.8rem;
             text-align: center;
             font-family: v.$font-family;
+
+            @include m.tablet{
+                font-size: 1.3rem;
+                display: flex;
+                justify-content: center;
+                width: 95%;
+                text-align: center;
             }
         }
 
@@ -99,6 +85,5 @@
                 background-color: v.$color_principal-dark;
             }
         }
-
     } 
 }

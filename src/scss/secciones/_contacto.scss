@@ -1,15 +1,19 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .formulario{
-    //background-color: v.$color_principal;
     padding: 3rem;
-    //font-family: v.$font-family;
     padding-top: 4rem;
     margin: 4rem auto;
     max-width: 900px;
     border-radius: 8px; 
     background-color: v.$blanco;
     box-shadow: 0 0 100px rgba(255, 255, 255, 40);
+    
+    @include m.tablet{
+        max-width: 600px;
+        width: 95%;
+    }
 }
 
 .formulario h2{
@@ -22,12 +26,12 @@
     margin-bottom: 2rem;
     font-size: 1.3rem;
     font-weight: v.$weight_600;
-    
 }
 .formulario_campo label{
     display: block;
     margin-bottom: 1rem;
     font-family: v.$font-family;
+   
 }
 .formulario_campo input, .formulario_campo textarea{
     width: 100%;
@@ -43,7 +47,7 @@
 button[type="submit"]{
     width: 20%;
     height: 50px;
-    background-color: #4CAF50;
+    background-color: v.$color_plomo;
     color: v.$blanco;
     padding: 1rem;
     border: none;
@@ -51,7 +55,11 @@ button[type="submit"]{
     cursor: pointer;
     font-size: v.$large_font-size;
     font-weight: v.$weight_600;
-    font-family: v.$font-family; 
+    font-family: v.$font-family;
+    
+    @include m.tablet{
+        width: 60%;
+    }
 }
 button[type="submit"]:hover{
     background-color: v.$color_principal-dark;

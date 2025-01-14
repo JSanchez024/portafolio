@@ -7,44 +7,78 @@
     <title>Joaquin Sanchez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
-
-   <!-- <script type="module" src="/build/js/app.js" defer></script>-->
 </head>
 <body>
 
-    <header class="header">
-        <div class="contenedor contenido_header">
-           <!-- <a href="#" class="h1">/ JS /</a>-->
-            <h1>/ JS /</h1>
+    <header class="header" id="header">
+        <nav class="nav nav_container">
+            <a href="#" class="nav_logo">Joaquin Sanchez</a>
 
-            <nav class="navegacion_principal">
-                <a href="#inicio" class="seleccionado">Inicio</a>
-                <a href="#sobremi">Sobre Mi</a>
-                <a href="#tecnologias">Tecnologias</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Sobre Mi</span>
+                        </a>
+                    </li>
 
-            <!--Icono de redes sociales-->
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/joaquin-sanchez-768071338/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/JSanchez024" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Tecnologias</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Proyectos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!--Boton Cerrar-->
+                <div class="nav_cerrar" id="nav_cerrar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="nav_social">
+                    <a href="https://www.linkedin.com/in/joaquin-sanchez-768071338/" target="_blank" class="nav_social-lik">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/JSanchez024" target="_blank" class="nav_social-lik">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="nav_social-lik">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
+            
+        </nav>
 
-        </div>    
     </header>
 
     <!--Bienvenida-->
     <section class="inicio" id="inicio">
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy<span> Joaquin Sanchez</span> Desarrollador Web</h2>
+                <h2 class="h2_inicio">Soy<span> Joaquin Sanchez</span> Desarrollador Web</h2>
                 <p class="descripcion">Explora mi portafolio. Aquí encontrarás una muestra de mis proyectos, habilidades y conocimientos adquiridos.<br> Un pixel a la vez</p>
                 <a href="#proyectos">Explora mis Proyectos</a>
             </div>
@@ -53,19 +87,18 @@
 
      <!--Sobre mi-->
     <section class="sobremi" id="sobremi">
-        <div class="contenedor_sobremi">
-            <div class="contenedor_foto">
-                <img class="img" src="src/img/pexels-creationhill-1681010.avif" alt="">
-            </div>
-            <div class="sobremi_container">
-                <p class="titulo_seccion">Sobre Mi</p>
-                <h2>Hola, soy &nbsp; <span> Joaquin Sanchez</span></h2>
-                <h3>Desarrollador Web</h3>
-                <p>Soy Tecnico Avansado en Programacion, formado en la Universidad Diego Portales. <br> Actualmente estoy en constante aprendisaje sobre desarrollo web y busco mi primera oportunidad para aplicar mis habilidades y conocimientos en un entorno profesional y aprender de un equipo experimentado </p>
-                <!--<p>Ldssdsdsdorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
-                <a href="#">Descargar CV</a>
-            </div>
+        <div class="contenedor_foto">
+            <img class="img" src="src/img/pexels-creationhill-1681010.avif" alt="Imagen cover">
         </div>
+        <div class="sobremi_container">
+            <p class="titulo_seccion">Sobre Mi</p>
+            <h2>Hola, soy &nbsp; <span> Joaquin Sanchez</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy Tecnico Avansado en Programacion, formado en la Universidad Diego Portales. <br> Actualmente estoy en constante aprendisaje sobre desarrollo web y busco mi primera oportunidad para aplicar mis habilidades y conocimientos en un entorno profesional y aprender de un equipo experimentado </p>
+            <!--<p>Ldssdsdsdorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
+            <a href="#">Descargar CV</a>
+        </div>
+       
        
     </section>
 
@@ -76,20 +109,20 @@
 
     <!--TECNOLOGIAS--->
     <section class="tecnologias" id="tecnologias"> 
-       
         <div class="content">
             <div class="info">
-                <h2>Tecnologias</h2>
+                <h2 class="h2">Tecnologias</h2>
                 <p>En mi viaje por el mundo del desarrollo web, he cultivado experiencia y habilidades en una variedad de tecnologias. Mi stack tecnologico incluye:</p>
-                
             </div>
+
             <div class="swiper">    
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
                         <h2>Frontend</h2>
+                        
                     </div>
-
+                    
                     <div class="swiper-slide">
                         <h2>Backend</h2>
                     </div>
@@ -97,6 +130,7 @@
                     <div class="swiper-slide">
                         <h2>Herramientas</h2>
                     </div>
+
 
                     <!--<div class="swiper-slide">
                         <h2>Frontend</h2>
@@ -106,42 +140,37 @@
             </div>
         </div>
 
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </section>
 
     <!--Proyectos-->
     <section id="proyectos" class="proyectos">
-        <div class="content">
-            <!--<div class="info">
-                <h2>Tecnologias</h2>
-                <p>En mi viaje por el mundo del desarrollo web, he cultivado experiencia y habilidades en una variedad de tecnologias. Mi stack tecnologico incluye:</p>
-                
-            </div>-->
+        <div class="content2">
+            <div class="info2">
+                <h2 class="h22">Proyectos</h2>
+                <p class="p2">En esta seccion podras encontrar diferentes proyectos los cuales he integrado el stack antes mencionado. Te invito a dar click en algun repositorio para que puedas hecharle un vistazo</p>     
+            </div>
+
             <div class="swiper">    
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide swiper-slide2">
                         <h2>Barberia</h2>
-                        <div class="icono2">
-                            <a href="https://www.linkedin.com/in/joaquin-sanchez-768071338/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
+                        <a href="https://github.com/JSanchez024/barberia-MVC" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
 
                     <div class="swiper-slide swiper-slide2">
                         <h2>Bienes Raices</h2>
-                        
+                        <a href="https://github.com/JSanchez024/bienes-raices" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
 
                     <div class="swiper-slide swiper-slide2">
                         <h2>Conferencias Dev</h2>
+                        <a href="https://github.com/JSanchez024/Conferencias-JS" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
 
                     <div class="swiper-slide swiper-slide2">
                         <h2>UpTask Crud</h2>
+                        <a href="https://github.com/JSanchez024/Project-Management" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     
                     <!--<div class="swiper-slide">
@@ -151,12 +180,6 @@
                 </div>
             </div>
         </div>
-
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </section>
 
     <!--Contacto-->
@@ -223,6 +246,7 @@
 
      <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+    <!--<script src="assets/js/main.js"></script>-->
     <script src="build/js/app.js"></script>
 
 </body>

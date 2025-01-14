@@ -10,15 +10,14 @@ $color_principal-dark: hsl(268, 87%, 31%);
 $color_principal-light: hsl(268, 100%, 83%);
 $title_color: hsl(0, 0%, 87%);
 $text_color: hsl(0, 0%, 87%);
-$body_color: hsl(200, 12%, 5%);
-$header_color: hsl(200, 12%, 5%, 50%);
+$color_negro: hsl(200, 12%, 5%);
 $container_color: hsl(200, 10%, 8%);
-$border_color: hsl(0, 0%, 20%);
+$color_plomo: hsl(0, 0%, 20%);
 $blanco: #fff;
 
 
 //Media Queries
-$telefono: 380px;
+$telefono: 480px;
 $tablet: 768px;
 $desktop: 1200px;
 $xl_desktop: 1440px;
@@ -30,8 +29,7 @@ $font-family: "Pixelify Sans", serif;
 $big_font-size: 5.5rem;
 $h2_font-size: 2.5rem;
 $h3_font-size: 1.5rem;
-$larger_font-size:1.2rem;
-$large_font-size: 1.125rem;
+$large_font-size:1.2rem;
 
 /* FONT WEIGHT*/
 $weight_300: 300;

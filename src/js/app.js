@@ -8,4 +8,3 @@ var swiperCard = new Swiper(".swiper", {
         invert: false,
     }
 })
-
