@@ -1,13 +1,12 @@
 .ir-arriba {
-    //display: none; /* Ocultamos el botón por defecto */
-    position: fixed; /* Lo fijamos en una posición */
-    bottom: 50px; /* Lo ubicamos a 20px del borde inferior */
-    right: 50px; /* Lo ubicamos a 20px del borde derecho */
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    border-radius: 20%; /* Bordes redondeados */
-    padding: 15px; /* Espacio interno */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    position: fixed;
+    bottom: 50px; 
+    right: 50px;
+    background-color: #4CAF50; 
+    color: white;
+    border-radius: 20%;
+    padding: 15px; 
+    cursor: pointer;
     
     :hover{
         font-size: 2rem;

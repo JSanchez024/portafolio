@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .contenedor_footer{
     background-color: v.$container_color;
@@ -14,4 +15,17 @@
     margin: .5rem;
     font-size: 1.5rem;
 }
+
+.p_correo{
+    font-size: 1.6rem;
+
+    @include m.tablet{
+        font-size: 20px;
+    }
+
+    @include m.telefono{
+        font-size: 15px;
+    }
+}
+
 

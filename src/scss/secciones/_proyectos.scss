@@ -2,6 +2,8 @@
 @use 'base/mixins' as m;
 
 
+//USAR ROW-GAP CUANDO HAYA UN FLEX-DIRECTION: COLUMN;
+
 .proyectos{
     position: relative;
     display: flex;
@@ -15,7 +17,7 @@
     padding: 5rem 5rem;
     margin: 2rem auto;
     border-radius: 8px;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 40);
+    box-shadow: 0 0 100px v.$color_principal-dark;
 
     @include m.tablet{
         max-width: 600px;

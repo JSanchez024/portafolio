@@ -1,14 +1,20 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+
+//USAR ROW-GAP CUANDO HAYA UN FLEX-DIRECTION: COLUMN;
+
 .sobremi{
     display: flex;
-    padding: 80px 15px;
+    padding: 50px 15px;
     margin: auto;
-    max-width: 1100px;
+    //max-width: 1100px;
+    margin-top: 7rem;
+    width: 900px;
+    height: 500px;
     color: v.$container_color;
     background-color: v.$blanco;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 40);
+    box-shadow: 0 0 100px v.$color_principal-dark;
     text-align: center;
     border-radius: 1rem;
   
@@ -16,9 +22,11 @@
         display: flex;
         flex-direction: column;
         max-width: 600px;
+        height: 100%;
         align-items: center;
         padding: 0;
         padding-bottom: 3rem;
+        margin-top: 7rem;
     }
 
     @include m.telefono{
@@ -48,7 +56,7 @@
     margin: 0 90px;
 
     .titulo_seccion{
-        font-size: 22px;
+        font-size: 35px;
         text-transform: uppercase;
         color: v.$color_negro;
         text-decoration: underline;
@@ -57,7 +65,7 @@
     }
 
     h2{
-        font-size: 34px;
+        font-size: 30px;
         font-weight: bold;
         margin: 20px;
         letter-spacing: 2px;
@@ -76,7 +84,7 @@
     }
 
     p{
-        font-size: v.$large_font-size;
+        font-size: 15px;
         line-height: 25px;
         color: v.$color_plomo;
         margin-bottom: 12px;
@@ -98,158 +106,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-//.contenedor_sobremi{
-//    border-radius: 20px;
-//    text-align: center;
-//    background-color: v.$blanco;
-//    box-shadow: 0 0 100px rgba(255, 255, 255, 40);
-//}
-
-
-// background-color: v.$blanco;
-   // box-shadow: 0 0 100px rgba(255, 255, 255, 40);
-   // text-align: center;
-   // font-weight: v.$weight_600;
-   // 
-   // @include m.tablet{
-   //     @include m.contenedor;
-   //     border-radius: 20px;
-   //     display: flex;
-   //     flex-direction: row;
-   //     max-width: 100%;
-   //     //background-color: aqua;
- //
-   //     
-   // }
-
-    //@include m.tablet{
-    //    justify-content: space-between;
-    //    //background-color: v.$container_color;
-    //    background-color: v.$blanco;
-    //    box-shadow: 0 0 100px rgba(255, 255, 255, 40);
-    //    max-width: 70%;
-    //    height: 550px;
-    //    margin-bottom: 17rem;
-//
-    //}
-
-//    .contenedor_sobremi{
-//        @include m.desktop{
-//            border-radius: 20px;
-//            text-align: center;
-//            background-color: v.$blanco;
-//            box-shadow: 0 0 100px rgba(255, 255, 255, 40);
-//        }
-//
-//        @include m.desktop{
-//            display: flex;
-//            gap: 3rem;
-//            //background-color: aqua;
-//            height: 40rem;
-//        }
-//
-//        .titulo_seccion{
-//            font-size: 2rem;
-//
-//            @include m.tablet{
-//                display: flex;
-//                text-align: center;
-//                justify-content: center;
-//                align-items: center;
-//                display: flex;
-//                justify-content: center;
-//                align-items: center;
-//                font-size: 1.6rem;
-//                text-transform: uppercase;
-//                color: v.$container_color;
-//                text-decoration: underline;
-//                text-decoration-color:v.$text_color;
-//                text-decoration-thickness: 5px ;
-//                font-weight: v.$weight_600;  
-//            }
-//        }
-//        h2{
-//            display: flex;
-//            justify-content: center;
-//            font-size: 2.5rem;
-//            font-weight: bold;
-//            margin: 2rem;
-//            letter-spacing: 2px;
-//            font-family: v.$font-family;
-//
-//            span{
-//                color: v.$color_principal-dark;
-//                font-family: v.$font-family;
-//            }
-//        
-//        }
-//        h3{
-//            display: flex;
-//            justify-content: center;
-//            text-decoration: none;
-//            color: v.$container_color;
-//            font-family: v.$font-family;
-//            font-size: 1.8rem;
-//            font-weight: 700;
-//            text-transform: uppercase;
-//            @include m.desktop{
-//
-//                letter-spacing: 4px;
-//            }
-//        }
-//        p{
-//
-//            padding: 2rem;
-//            @include m.desktop{
-//                font-size: v.$larger_font-size;
-//                line-height: 2rem;
-//                color: v.$border_color;
-//                margin-bottom: 1.2rem;
-//
-//            }
-//
-//        }
-//        a{
-//            display: flex;
-//            justify-content: center;
-//            text-decoration: none;
-//            color: v.$container_color;
-//            border-radius: 3rem;
-//            align-items: center;
-//            width: 200px;
-//            height: 60px;
-//            margin: 40px auto;
-//            border: 2px solid #000;
-//            transition: .5s;
-//        }
-//        
-//    }
-//    
-//}
-//.img{
-//    margin-top: 4.1rem;
-//    height: 420px;
-//    width: 280px;
-//    border-radius: 2rem;
-//
-//    @include m.desktop{
-//       margin-left: 4rem;
-//       margin-top: 4.1rem;
-//       height: 420px;
-//       width: 280px;
-//       border-radius: 2rem;
-//       
-//    }
-//   
-//}
-
